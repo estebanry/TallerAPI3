@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MrWebAPI.xamarin.Views.PublicacionPage"
+             Title="Publicaciones">
+    <ListView x:Name="listPublicaciones" >
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell
+                    Text="{Binding Usuario}"
+                    Detail="{Binding Descripcion}"
+                    TextColor="Blue"
+                    DetailColor="Gray"
+                    
+                    />
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>
